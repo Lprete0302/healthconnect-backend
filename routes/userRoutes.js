@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
 const auth = require('../middleware/auth');
-const User = require('../models/User');
+const User = require('../models/userModel'); // ✅ updated import
 
 // Test route
 router.get('/test', userController.testUser);
